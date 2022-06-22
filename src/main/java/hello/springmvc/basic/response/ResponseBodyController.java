@@ -43,6 +43,10 @@ public class ResponseBodyController {
         return new ResponseEntity<>(helloData, HttpStatus.OK);
     }
 
+    /**
+     * HttpEntity, ResponseEntity(Http Status 추가)
+     * @return
+     */
     @ResponseStatus(HttpStatus.OK)
 //    @ResponseBody
     @GetMapping("/response-body-json-v2")
